@@ -1,0 +1,81 @@
+ class Student inherits Person:
+    private field name string;
+    private field id int;
+    private field GPA int;
+    private field age int;
+    private field coursesGrade int[];
+    private field courseNumber int;
+    private field isMinor bool;
+
+    public function Student() returns int:
+        return 1;
+    end
+    public function setGrade(grade:int) returns int:
+        self.courseNumber = self.courseNumber + 1;
+        self.courseGrade[courseNumber] = grade;
+        return 1;
+    end
+
+    public function setName(Name:string) returns int:
+        self.name = name;
+        return 1;
+    end
+
+    public function setAge(age:int) returns int:
+        self.age = age;
+        return 1;
+    end
+
+    public function computeGrade() returns int:
+        var sum = 0;
+        var index = 0;
+        while(index < self.courseNumber) begin
+            sum = sum + courseGrade[index];
+            index = index + 1;
+        end
+        self.GPA = sum/index;
+        return self.GPA;
+    end
+
+    public function isMinor() returns int:
+        if(self.age>0 && self.age<18)
+        begin
+            print("Consider as minor");
+            self.isMinor=true;
+            return 0;
+        end
+        elif(self.age > 18 || self.age==18)
+        begin
+            var x = 0;
+            print("This person is not a minor,thus is eligible to work \n");
+            return 1;
+        end
+        else begin
+            print("Something's wrong. Please reset the age");
+            return -1;
+        end
+    return 0;
+    end
+end
+
+entry class MainClass:
+    function main() returns int:
+        var name = "Sara Mohammadi";
+        var age = 22;
+        var id = 9812789072;
+        var number=12;
+        var temp=0;
+        grades=new int[24];
+        student = new Student();
+        temp=student.setGrade(19);
+        temp=student.setGrade(15);
+        temp=student.setGrade(20);
+        temp=student.setGrade(17);
+        temp=student.setGrade(18);
+        temp=student.setGrade(20);
+        temp=student.setGrade(14);
+        temp=student.setGrade(17);
+        temp = student.computeGPA();
+        return 1;
+    end
+end
