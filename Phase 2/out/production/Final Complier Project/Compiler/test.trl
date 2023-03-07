@@ -1,0 +1,66 @@
+class Human inherits Creature:
+    field nose Nose;
+    field hands Hand[];
+    field legs Leg[] ;
+    field ints int[] ;
+    field ints bool[] ;
+    field calories int ;
+    field calories bool ;
+    field isHungry bool ;
+    field  water Drink ;
+    field food Food;
+
+    public function Human(n: Nose) returns Nose:
+        self.nose = n;
+        return n;
+    end
+
+    public function speak() returns Voice :
+        var water = new Drink();
+        var voice = new Voice();
+        var voice = new Voice();
+        return voice;
+
+    end
+
+    public function work(g: int,  felan: string) returns int:
+        return 0;
+    end
+
+    public function  speak() returns Food:
+        var a = b + c;
+        var s=0;
+
+        while (self.isHungry) begin
+            newFood = new Food();
+            var h = "hello";
+            if(1==1)
+                var y=0;
+            else
+                var x=4;
+            a = new Human().eat(newFood, h);
+            self.isHungry = self.checkIsHungry();
+        end
+        return h;
+    end
+
+    public function eat (food: Food,c: int) returns Food:
+       var calories = "c";
+        var newFood = "food";
+        var water = new Drink();
+
+        while (self.isHungry) begin
+            newFood = new Food();
+            var h=0;
+            if (1==1)
+            self.isHungry = self.checkIsHungry();
+        end
+        return newFood;
+    end
+end
+
+entry class MainClass:
+    function main() returns int:
+        return 1;
+    end
+end
