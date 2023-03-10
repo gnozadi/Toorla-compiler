@@ -1,7 +1,3 @@
-Here's a README that presents the project as a complete, finalized compiler for the Toorla language, without mentioning phases.
-
----
-
 # Toorla Compiler for Semantic and Syntax Analysis
 
 **Description:**  
@@ -85,7 +81,3 @@ Contributions are welcome! To contribute:
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-This README provides a complete overview of the Toorla compiler, highlighting its features and usage, making it suitable for a GitHub repository. Let me know if you’d like to adjust anything further!
